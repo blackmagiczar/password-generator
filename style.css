@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(16, 13, 26);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  align-items: center;
+  margin: 0px;
+}
+#generator-container {
+  border: 1px solid hsl(252, 50%, 75%);
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 5px hsl(252, 96%, 73%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  min-width: 20vw;
+  width: fit-content;
+  background-color: hsla(252, 19%, 100%, 0.05);
+}
+#generator-container > div {
+  padding: 1rem 0px;
+}
+#output-container {
+  display: flex;
+  justify-content: space-between;
+}
+#output {
+  font-size: 1.2rem;
+  border: 1px solid black;
+  margin-right: 0.5rem;
+  padding: 5px;
+}
+#checkboxes {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+#length-con {
+  display: flex;
+  justify-content: space-between;
+}
+#password-strength {
+  display: flex;
+}
+#password-strength div {
+  width: 1.2rem;
+  height: 2rem;
+  border: 1px solid black;
+  margin: 0.2rem;
+}
+#strength {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#socials {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80vw;
+}
+#socials i {
+  color: black;
+  border-radius: 50%;
+}
+#socials i:hover {
+  color: hsl(254, 60%, 43%);
+}
+#divider {
+  width: 100%;
+  height: 1rem;
+  border-bottom: 5px solid hsl(254, 60%, 43%);
+}
+
+#foot a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+#foot a {
+  padding-left: 1rem;
+  display: flex;
+  min-height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+#foot > a {
+  font-weight: 100;
+  font-family: cursive;
+  padding-top: 0.8rem;
+}

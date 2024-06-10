@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="generatePassword.js"></script>
+    <script src="password_checker.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/96007893f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="generator-container">
+      <div id="output-container">
+        <label id="output">password</label>
+        <button type="button" id="copy" onclick="copyPassword()">Copy</button>
+      </div>
+
+      <div id="generator">
+        <span id="length-con">
+          <p>Character Length</p>
+          <p id="length">8</p>
+        </span>
+
+        <input
+          type="range"
+          name="lengthSlide"
+          id="lengthSlide"
+          min="4"
+          max="20"
+          value="8"
+          oninput="updateLength()"
+        />
+        <div id="checkboxes">
+          <div id="uppercase-con">
+            <input type="checkbox" name="uppercase" id="uppercase" />Include
+            Uppercase
+          </div>
+          <div id="numbers-con">
+            <input type="checkbox" name="numbers" id="numbers" />Include Numbers
+          </div>
+          <div id="symbols-con">
+            <input type="checkbox" name="symbols" id="symbols" />Include Symbols
+          </div>
+        </div>
+        <div id="strength-con">
+          <label for="strength" id="strength"
+            >Strength:<span id="password-strength">
+              <div id="bar1"></div>
+              <div id="bar2"></div>
+              <div id="bar3"></div>
+              <div id="bar4"></div> </span
+          ></label>
+        </div>
+        <input type="button" value="Generate" onclick="generatePassword()" />
+      </div>
+    </div>
+
+    <footer>
+      <section id="socials">
+        <a
+          href="https://github.com/blackmagiczar"
+          id="profile-link"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github fa-3x"></i>
+        </a>
+
+        <a href="https://www.chess.com/member/sibonisomalapane">
+          <i class="fa-regular fa-chess-knight fa-3x"></i>
+        </a>
+      </section>
+      <hr />
+      <span id="divider"> </span>
+      <span id="foot">
+        <a href="index.html">Innocent</a>
+      </span>
+    </footer>
+  </body>
+</html>
