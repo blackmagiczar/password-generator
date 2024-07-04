@@ -106,9 +106,18 @@ let generateSymbols = () => {
 };
 
 let copyPassword = () => {
+  document.cookie = "password=;expires=Thu, 01 Jan 1970 00:00:00 UTC";
   var copyText = document.getElementById("output");
+  document.cookie = "password=" + copyText.innerHTML;
 
   navigator.clipboard.writeText(copyText.innerHTML);
+};
+window.onload = () => {
+  var copyText = document.getElementById("output");
+  copyText.innerHTML = decodeURIComponent(document.cookie).substring(
+    9,
+    decodeURIComponent(document.cookie).length
+  );
 };
 
 /**********PASSWORD STRENGTH CHECKER****************** */
